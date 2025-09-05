@@ -1,8 +1,7 @@
 # <img src="https://s3.amazonaws.com/swap.assets/swap_logo.png" height="30px" width="30px"/> Swap
 
-[![Build status](http://img.shields.io/travis/florianv/swap.svg?style=flat-square)](https://travis-ci.org/florianv/swap)
-[![Total Downloads](https://img.shields.io/packagist/dt/florianv/swap.svg?style=flat-square)](https://packagist.org/packages/florianv/swap)
-[![Version](http://img.shields.io/packagist/v/florianv/swap.svg?style=flat-square)](https://packagist.org/packages/florianv/swap)
+**This is a fork of [florianv/swap](https://github.com/florianv/swap) for the use in Part-DB.**
+
 
 Swap allows you to retrieve currency exchange rates from various services such as **[Fixer](https://fixer.io/)**, **[Currency Data](https://currencylayer.com)** or **[Exchange Rates Data](https://exchangeratesapi.io/)** and optionally cache the results. 
 It is integrated to other libraries like [moneyphp/money](https://github.com/moneyphp/money) and provides
@@ -28,7 +27,7 @@ a [Symfony Bundle](https://github.com/florianv/FlorianvSwapBundle) and a [Larave
 ## QuickStart
 
 ```bash
-$ composer require php-http/curl-client nyholm/psr7 php-http/message florianv/swap
+$ composer require php-http/curl-client nyholm/psr7 php-http/message part-db/swap
 ```
 
 ```php
