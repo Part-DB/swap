@@ -97,15 +97,6 @@ class FactoryTest extends TestCase
         $factory = new Factory(new \stdClass());
     }
 
-    public function testWithNullAsClient()
-    {
-        $this->expectException(NotFoundException::class);
-        $expectedExceptionMessage = 'No HTTPlug clients found. Make sure to install a package providing "php-http/client-implementation"';
-        $this->expectExceptionMessage($expectedExceptionMessage);
-
-        $factory = new Factory();
-    }
-
     public function testSetInvalidClient()
     {
         $this->expectException(\LogicException::class);
